@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal</title>
+</head>
+<style>
+    .gradient-background {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to right, #e8e3e7, #dea5d8); /* From orange to pink */
+        }
+    .gif1{
+        display: flex; 
+        flex-direction: column;
+            justify-content: center; /* Horizontally center the content */
+            align-items: center; /* Vertically center the content */
+            height: 100vh;
+           
+    }
+    img {
+            max-width: 90%; 
+            max-height: 90%;
+
+        }
+        h3{
+            margin-top: 10px;
+            font-size: 25px; 
+            text-align: center; 
+            color: black; 
+            }
+            .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Space between buttons */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #48b64a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .but1:hover {
+            background-color: #29752c; /* Hover effect */
+        }
+        .but2:hover{
+            background-color: rgb(252, 0, 0);
+        }
+
+</style>
+<body>
+<div class="gradient-background">
+    <div class="gif1">
+    <img src="bubu-dudu.gif" alt="bubu-dudu.gif" >
+    <h3>Do you love me?</h3>
+    <div class="button-container">
+        <button class="but1" onclick="redirectPage()">YES</button>
+        <button class="but2" onclick="redirectPage2()">NO</button>
+    </div>
+    </div>
+</div>
+  <script>
+    function redirectPage(){
+        window.location.href="yes.html";
+    }
+    function redirectPage2(){
+        window.location.href="no.html"
+    }
+  </script>
+</body>
+</html>
